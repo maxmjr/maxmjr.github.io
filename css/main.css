@@ -83,18 +83,23 @@ ul li {
 
 /*------------------------HEADER--------------------------*/
 
+
+
+
 .header {
     height: 77px;
     background: #131415;
     color: #ffffff;
 }
 
-.logo, .nav, .nav__item, .info {
-        display: inline-block;
-}
+.container--logo, .nav, .nav__item, .info {
+    display: inline-block;
+    width: 33%;
+    height: 77px;
+    float:left;
+} 
 
-.logo {
-    width: 33.3%;
+ .logo {
     height: 77px;
     font-family: gora_free, 'Times New Roman', Times, serif;
     font-size: 18px;
@@ -104,18 +109,15 @@ ul li {
     vertical-align: middle;
     line-height: 77px;
     text-decoration: none;
-    /* margin-top: 25px; */
     position: relative;
-    float: left;
-    text-align: center;
-}
+    text-align: left;
+    padding-left: 20px;
+    
+} 
 
-.nav {
-    height: 15px;
-    width: 33.3%;
+.nav__item{
     position: relative;
 }
-
 .nav__link {
 	font-weight: 700;
 	font-size: 12px;
@@ -124,12 +126,14 @@ ul li {
 	text-decoration: none;
 	height: 9px;
 	padding-left: 30px;
-	width: 33.3%;
+	width: 33%;
     float: left;
     display: inline-block;
-    /* margin: 0 auto; */
-    /* position: relative; */
-
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .nav__link--main {
@@ -206,7 +210,6 @@ ul li {
 
 .info {
     font-weight: 700;
-	width: 33.3%;
     float: right;  
     vertical-align: middle;
     text-align: right;
@@ -229,20 +232,22 @@ ul li {
     text-decoration: underline;
     cursor: pointer;
 }
+
+
+
 /*------------------------HEADER--------------------------*/
 /*--------------------------------------------------------*/
-/*------------------------BANNER--------------------------*/
+/*-----------------------PROMOTION------------------------*/
 
-.banner__image {
+.promotion__image {
     margin: 0 auto;
     width: 740px;
     height: 486px;
-    /* background: url('../img/banner/banner.png') no-repeat; */
     background-size: cover;
     overflow: hidden;
 }
 
-/*------------------------BANNER--------------------------*/
+/*-----------------------PROMOTION------------------------*/
 /*--------------------------------------------------------*/
 /*-----------------------FEATURES-------------------------*/
 
@@ -267,27 +272,27 @@ ul li {
 	list-style: none;
 }
 
-.column--inline {
+.features__column-list {
     display: inline-block;
     width: 240px;
 }
 
-.featrues_image {
+.featrues__image {
 	width: 68px;
 	height: 68px;
 	border-radius: 50%;
 	margin: 0 auto;
 }
 
-.image--unique {
+.featrues__image--unique {
 	background: url('../img/icons/flower.png') center no-repeat #f89513; 
 }
 
-.image--premium-class {
+.featrues__image--premium-class {
 	background: url('../img/icons/mark-as-favorite-star.png') center no-repeat #f89513; 
 }
 
-.image--personal-trainer {
+.featrues__image--personal-trainer {
 	background: url('../img/icons/painter-palette.png') center no-repeat #f89513; 
 }
 
@@ -318,7 +323,7 @@ ul li {
 /*--------------------------------------------------------*/
 /*--------------------------NEWS--------------------------*/
 
-.title--news {
+.news__title {
     font-size: 49px;
 	letter-spacing: 2.2px;
 	margin-top: 62.5px;
@@ -348,7 +353,7 @@ ul li {
 	overflow: hidden;  
 }
 
-.news__content--prop {
+.news__content {
     width: 694px;
     display: inline-block;
 }
@@ -444,17 +449,17 @@ ul li {
     
 }
 
-.pagination__block, .pagination__item {
-	display: inline-block;
+.pagination__block, .pagination__item, .pagination__btn {
+    display: inline-block;
+    padding-left: 5px;
 }
 
-.pagination__link {
+.pagination__link, .pagination__btn {
 	width: 25px;
 	height: 25px;
 	font-weight: 700;
 	font-family: OpenSans, Arial, Helvetica, sans-serif;
 	color: #221f1f;
-	display: block;
 	text-align: center;
 	text-decoration: none;
 	line-height: 25px;
@@ -465,12 +470,16 @@ ul li {
 	border-radius: 2px;
 	color: white;
 }
-.pagination__link:hover {
+.pagination__link:hover, .pagination__btn:hover {
 	color: #f89513;
 }
 
-.pagination__link--disabled:hover {
+.pagination__link--disabled {
 	color: rgba(39, 39, 62, 0.3);
+}
+
+.pagination__link--disabled:hover {
+    color: rgba(39, 39, 62, 0.3);
 }
 
 /*------------------PAGINATION----------------------*/
