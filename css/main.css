@@ -62,12 +62,18 @@ body {
     font-weight: 400;
 }
 
-.wrapper { 
+.wrapper { /*updated*/
     position: relative;
     min-height: 100%;
     overflow: hidden;
     min-width: 1140px;
 }
+
+/* .wrapper:after { 
+    content: "";
+    display: block;
+    height: 79px;
+} */
 
 .container {
     max-width: 1100px;
@@ -114,7 +120,7 @@ ul li {
 
 .header--logo {
     padding-top: 29px;
-    padding-bottom: 28px;
+    padding-bottom: 27px;
     padding-left: 20px;
     width: 358px;
 }
@@ -146,7 +152,6 @@ ul li {
     vertical-align: middle;
     padding-right: 14px;
     padding-top:2px;
-
 }
 
 .nav__item {
@@ -472,7 +477,7 @@ ul li {
 	color: #656464;
 	margin-left: 376px;
 	margin-top: 69px;
-	margin-bottom: 68px;
+	margin-bottom: 67px;
     
 }
 
@@ -537,7 +542,7 @@ ul li {
 	width: 30%;
 	line-height: 10px;
 	text-align: right;
-	letter-spacing: .5px;
+	letter-spacing: .6px;
 	margin-top: 20px;
 	margin-right: 22px;
 }
@@ -554,7 +559,7 @@ ul li {
 	text-align: center;
     margin-left: 35px;
     padding-left: 2px;
-    padding-top:25px;
+    padding-top:27px;
 }
 .copyright {
 	font-weight: 300;
