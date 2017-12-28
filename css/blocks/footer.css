@@ -101,3 +101,7 @@
 	background: url('../../img/social/mail.png') center no-repeat #d0d0d0;
 	border-radius: 50%;
 }
+
+.visually-hidden {
+	display: none;
+}
