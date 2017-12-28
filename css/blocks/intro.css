@@ -55,6 +55,7 @@
     margin-right: auto;
     width: 170px;
     height: 44px;
+    display: inline-block;
 
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-size: 12px;

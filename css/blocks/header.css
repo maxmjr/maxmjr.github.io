@@ -64,7 +64,6 @@
     background-size: contain;
     height: 12px;
     padding-right: 20px;
-    /* transition: 1s;  */
 }
 
 .nav__icon--active-main {
@@ -92,7 +91,6 @@
     background-size: contain;
     width: 18px;
     height: 16px;
-    /* transition: 1s;  */
 }
 
 .nav__icon--active-feeds {
@@ -115,7 +113,6 @@
     background-size: contain;
     width: 15px;
     height: 11px;
-    /* transition: 1s;  */
 }
 
 .nav__icon--active-services {
@@ -127,7 +124,6 @@
 
 .nav__link:hover .nav__text {
     color: #f89513;
-    /* transition: 0.8s;  */
 }
 
 .info {
@@ -151,13 +147,12 @@
 	padding-top: 2px;
     text-decoration: underline;
     cursor: pointer;
-    transition: color 1s;
+    transition: color 0.3s;
 }
 
 
 .info__schedule:hover {
     color: rgba(255, 255, 255, 0.7);
-    /* transition: color 1s; */
 }
 
 .info__popup {
@@ -169,11 +164,11 @@
     position: absolute;
     right: 0px;
     width: 150px;
-    height: 60px;
-    padding-top: 8px;
+    height: 48px;
+    padding-top: 12px;
     padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     top: 30px;
     right: -9999px;
     z-index: 10;
@@ -209,9 +204,11 @@
     font-weight: 300;
     color: #221f1f;
     line-height: 1.5;
+    width: 137px;
 }
 
 .info__popup-text--marked {
     font-weight: 700;
     color: #f89513;
+    width: 140px;
 }
