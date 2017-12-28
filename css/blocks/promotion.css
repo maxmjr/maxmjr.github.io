@@ -1,0 +1,12 @@
+.promotion .container {
+    padding-top: 78px;
+    padding-bottom: 17px;
+}
+.promotion__image {
+    margin: 0 auto;
+    width: 740px;
+    height: 486px;
+    background-size: cover;
+    overflow: hidden;
+    
+}

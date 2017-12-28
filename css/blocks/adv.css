@@ -1,0 +1,18 @@
+.advertisement {
+	background: #131415;
+	text-align: left;
+	color: white;
+	background-image: url('../../img/promotion/group1.png');
+	margin-bottom: 60px;
+	display: block;
+}
+.advertisement__form {
+	padding: 22px 218px 30px 218px;
+	font-size: 18px;
+	font-family: 'open_sanslight';
+	line-height: 1.7;
+}
+.advertisement__form--strong {
+	color: #e98c13;
+	font-family: 'open_sansbold';
+}

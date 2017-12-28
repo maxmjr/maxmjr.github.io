@@ -1,0 +1,217 @@
+.header {
+    background: #131415;
+    color: #ffffff;
+}
+
+.header--logo, .nav, .nav__item, .info {
+    display: inline-block;
+} 
+
+.header--logo {
+    padding-top: 29px;
+    padding-bottom: 27px;
+    padding-left: 20px;
+    width: 358px;
+}
+.logo {
+    font-family: 'gora_freeregular', 'Times New Roman', Times, serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #f89513;
+    text-decoration: none;
+} 
+
+.nav__text {
+    font-weight: 700;
+	font-size: 12px;
+    color: #ffffff;
+    letter-spacing: 1.8px;
+	text-decoration: none;
+    margin: 0 auto;
+    display: inline-block;
+    transition: all 0.2s;
+    vertical-align: middle;
+    transition: 0.8s; 
+
+}
+
+.nav__icon {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    transition: all 0.2s;
+    vertical-align: middle;
+    padding-right: 14px;
+    padding-top:2px;
+}
+
+.nav__item {
+    padding-right: 22px;
+}
+
+.nav__icon--main {
+    background: url('../../img/icons/main-icon.png') no-repeat;
+    background-size: contain;
+    height: 12px;
+    padding-right: 20px;
+    transition: 1s; 
+    
+
+}
+
+.nav__link:hover .nav__icon--main {
+    background: url('../../img/icons/main_icon_2.png') no-repeat;
+    background-size: contain;
+    height: 12px;
+    padding-right: 20px;
+    /* transition: 1s;  */
+}
+
+.nav__icon--active-main {
+    background: url('../../img/icons/main_icon_2.png') no-repeat;
+    background-size: contain;
+    height: 12px;
+    padding-right: 20px;
+}
+
+.nav__active-text {
+    color: #f89513;  
+}
+
+.nav__icon--feeds {
+    background: url('../../img/icons/feed-icon.png') no-repeat;
+    background-size: contain;
+    width: 18px;
+    height: 16px;
+    transition: 1s; 
+
+}
+
+.nav__link:hover .nav__icon--feeds {
+    background: url('../../img/icons/feed_icon_2.png') no-repeat;
+    background-size: contain;
+    width: 18px;
+    height: 16px;
+    /* transition: 1s;  */
+}
+
+.nav__icon--active-feeds {
+    background: url('../../img/icons/feed_icon_2.png') no-repeat;
+    background-size: contain;
+    width: 18px;
+    height: 16px;
+}
+
+.nav__icon--services {
+    background: url('../../img/icons/service-icon.png') no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 11px;
+    transition: 1s; 
+}
+
+.nav__link:hover .nav__icon--services {
+    background: url('../../img/icons/service_icon_2.png') no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 11px;
+    /* transition: 1s;  */
+}
+
+.nav__icon--active-services {
+    background: url('../../img/icons/service_icon_2.png') no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 11px;
+}
+
+.nav__link:hover .nav__text {
+    color: #f89513;
+    /* transition: 0.8s;  */
+}
+
+.info {
+    font-family: 'open_sansbold';
+	float: right;
+	text-align: right;
+	padding-right: 20px;
+	padding-top: 17px;
+}
+.info__phone {
+	font-size: 21px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.info__schedule {
+    position: relative;
+    font-size: 14px;
+	display: block;
+	color: rgba(248, 149, 19, 0.7);
+	padding-top: 2px;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 1s;
+}
+
+
+.info__schedule:hover {
+    color: rgba(255, 255, 255, 0.7);
+    /* transition: color 1s; */
+}
+
+.info__popup {
+    
+    border-radius: 3px;
+    background-color: #fff;
+    color: #1c5bc3;
+    line-height: 1.5em;
+    position: absolute;
+    right: 0px;
+    width: 150px;
+    height: 60px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 30px;
+    right: -9999px;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    opacity: 0.95;
+
+}
+.info__popup::before {
+    content: "";
+    display: block;
+    height: 20px;
+    top: -20px;
+    right: 0;
+    left: 0;
+    position: absolute;
+}
+.info__popup::after {
+    content: "";
+    border: 12px solid transparent; 
+    border-bottom: 12px solid white; 
+    display: block;
+    top: -22px;
+    right: 3px;
+    position: absolute;
+}
+
+.info__schedule:hover .info__popup {
+    right: -2px;
+}
+
+.info__popup-text {
+    font-size: 14px;
+    font-weight: 300;
+    color: #221f1f;
+    line-height: 1.5;
+}
+
+.info__popup-text--marked {
+    font-weight: 700;
+    color: #f89513;
+}

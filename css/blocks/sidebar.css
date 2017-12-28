@@ -1,0 +1,53 @@
+.sidebar {
+	width: 190px;
+	text-align: left;
+	float: right;
+}
+
+.sidebar__title {
+	font-weight: 600;
+	letter-spacing: 2.3px;
+	font-size: 12px;
+	/* line-height: 2; */
+	color: black;
+    margin-left: 13px;
+    margin-bottom: 9px;
+}
+
+.sidebar__period {
+	color: #7a7979;
+	font-weight: 600;
+	letter-spacing: 2.2px;
+	font-size: 12px;
+	margin-bottom: 22px;
+	margin-left: 13px;
+}
+
+.sidebar__images {
+	width: 160px;
+	text-align: center;
+    text-decoration: none;
+    margin-left: 12px;
+}
+
+.sidebar__image-container {
+	overflow: hidden;
+	margin: 0 0 20px 0;
+}
+
+.sidebar__image-container--first {
+    height: 120px;
+
+}
+
+.sidebar__image-container--second {
+    height: 160px; 
+}
+
+.sidebar__image-container--third {
+    height: 160px;
+}
+
+.sidebar__image {
+    display: inline;
+}
